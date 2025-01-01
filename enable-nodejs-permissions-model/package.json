@@ -1,0 +1,15 @@
+{
+  "name": "enable-nodejs-permissions-model",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "//": "doesnt work because of the --permission flag",
+    "dev": "node --permission --env-file=.env server.js",
+    "///": "works",
+    "dev-works": "node --permission --allow-fs-read=* --env-file=.env server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
