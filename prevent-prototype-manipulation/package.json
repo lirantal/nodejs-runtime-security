@@ -1,0 +1,15 @@
+{
+  "name": "prevent-prototype-manipulation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "//": "the prototype is allowed to be manipulaed by default",
+    "dev": "node server.js",
+    "///": "works",
+    "dev-safe": "node --disable-proto=throw --frozen-intrinsics server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

