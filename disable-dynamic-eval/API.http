@@ -1,0 +1,8 @@
+### Send an HTTP request: looks like it works, right?
+
+GET http://127.0.0.1:3000/?expr=2*2
+
+
+### Send an HTTP request: here is why it is a bad idea
+
+GET http://127.0.0.1:3000/?expr=console.log(1)

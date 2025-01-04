@@ -1,0 +1,15 @@
+{
+  "name": "disable-dynamic-eval",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "//": "you can use eval and new Function freely from string input",
+    "dev": "node server.js",
+    "///": "now you cant",
+    "dev-safe": "node --disallow-code-generation-from-strings server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
